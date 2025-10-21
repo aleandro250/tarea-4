@@ -1,0 +1,91 @@
+/* ===== Estilos generales ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.changelog-container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+}
+
+.changelog-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.changelog-header h1 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.changelog-header p {
+  font-size: 0.95em;
+  color: #666;
+}
+
+/* ===== Lista de cambios ===== */
+.change-item {
+  border-left: 4px solid #3498db;
+  background: #f9fbfd;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.change-item:hover {
+  background: #ecf5ff;
+  transform: scale(1.02);
+}
+
+.change-date {
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.change-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.change-description {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ===== Diseño responsivo ===== */
+@media (max-width: 600px) {
+  .changelog-container {
+    padding: 20px;
+  }
+
+  .changelog-header h1 {
+    font-size: 1.5em;
+  }
+
+  .change-item {
+    padding: 12px 15px;
+  }
+}
